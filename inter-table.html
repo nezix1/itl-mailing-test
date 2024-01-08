@@ -1,131 +1,104 @@
 <header>
-    <div style="max-width: 840px; width: 100%; margin: 0 auto; padding: 0 5px; box-sizing: content-box; display: flex;">
+    <div style="width: 840px;  margin: 0 auto; padding: 0 5px; box-sizing: content-box;">
         <div style="margin: auto 0;"><a style="width: 150px;" href="http://www.inter-freight.ru/" target="_blank"
                 rel="noopener"> <img src="https://crm-core.soft-pro.com/img/for-emails/logo-inter-freight.png"
                     alt="ИНТЕР-ФРЕЙТ Международные перевозки" width="250"></a></div>
     </div>
 </header>
 <main>
-    <div style="max-width: 840px; width: 100%; margin: 0 auto; padding: 0 5px; box-sizing: content-box;">
+    <div style="width: 840px;  margin: 0 auto; padding: 0 5px; box-sizing: content-box;">
         <p style="text-align: center; display: block;">Актуальная информация о ситуации по международным перевозкам от
             {{$cur_date}} г.</p>
         <p style="text-align: center; display: block;">Уважаемые клиенты!</p>
         <p>Специально для Вашей компании мы подготовили статистику по транзитным срокам:</p>
         <br><strong style="font-size: 18px; text-align: center; display: block; margin-bottom: 10px;">Из Китая через
             Владивосток</strong> <br>
-        <div style="display: flex;">
-            <div style="width: 300px; margin-right: 20px;">
-                <div style="width: 300px; margin: 0 auto;">
-                    <p style="text-align: center; color: #ff8317; margin: 5px 0;">В среднем-{{$daysFull_AVG}} дн.</p>
-                    <img src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/element1.png"
-                        alt="" width="300">
-                    <div style="display: flex; width: 300px;">
-                        <div
-                            style="width: 10px; height: 10px; border: 2px solid #ff8317; border-radius: 50%; margin: auto 0; display: block;">
-                            &nbsp;</div>
-                        <div style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
-                            &nbsp;</div>
-                        <img style="display: block; margin: auto 0;"
-                            src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/ship.png"
-                            alt="" width="30" height="30">
-                        <div style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
-                            &nbsp;</div>
-                        <div
-                            style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #ff8317; text-align: center;">
-                            &nbsp;</div>
-                        <div style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
-                            &nbsp;</div>
-                        <img style="display: block; margin: auto 0;"
-                            src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/train.png"
-                            alt="" width="30" height="30">
-                        <div style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
-                            &nbsp;</div>
-                        <div
-                            style="width: 10px; height: 10px; border: 2px solid #ff8317; border-radius: 50%; margin: auto 0; display: block;">
-                            &nbsp;</div>
-                    </div>
-                </div>
-                <div style="width: 100%; display: flex;">
-                    <p
-                        style="width: 100px; text-align: left; font-size: 10px; color: #092f61; margin: 0 auto 0                        0;">
-                        China</p>
-                    <p
-                        style="width: 100px; text-align: center; font-size: 10px; color: #092f61; margin: 0 auto 0                        auto;">
-                        Владивосток</p>
-                    <p
-                        style="width: 100px; text-align: right; font-size: 10px; color: #092f61; margin: 0 0 0                        auto;">
-                        {{$transTime_city}}</p>
-                </div>
-            </div>
-            <div style="margin: auto 0;">
-                <p style="font-size: 13px;">Средний транзитный срок {if
-                    $daysFull_AVG_percentage}({{$daysFull_AVG_percentage}}% ктк по нашей компании){/if}:
-                    {{$daysFull_AVG}} дн.</p>
-            </div>
-        </div>
-
-        <table cellspacing="0" cellpadding="0" border="0" width="100%">
-            <tr>
-                <td style="width: 300px; margin-right: 20px;">
-                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="text-align: center;">
-                                <p style="text-align: center; color: #ff8317; margin: 5px 0;">Вот это часть - табличная</p>
-                                <img src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/element1.png"
-                                    alt="" width="300" style="display: block;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <table width="840" style="border: none; border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="width: 300px; margin-right: 20px;">
+                        <div style="width: 300px; margin: 0 auto;">
+                            <p style="text-align: center; color: #ff8317; margin: 5px 0;">В среднем-{{$daysFull_AVG}}
+                                дн.</p>
+                            <img src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/element1.png"
+                                alt="" width="300">
+                            <table width="300" style="border: none; border-collapse: collapse; border-spacing: 0;" cellspacing="0" cellpadding="0">
+                                <tbody>
                                     <tr>
-                                        <td style="width: 10px; text-align: center;">
-                                            <div style="width: 10px; height: 10px; border: 2px solid #ff8317; border-radius: 50%; display: block;">&nbsp;</div>
+                                        <td width="10" height="10">
+                                            <div
+                                                style="width: 10px; height: 10px; border: 2px solid #ff8317; border-radius: 50%; margin: 13px 0;">
+                                                &nbsp;</div>
                                         </td>
-                                        <td style="width: 44px; text-align: center;">
-                                            <div style="width: 44px; height: 2px; background: #ff8317; display: block;">&nbsp;</div>
+                                        <td width="44" height="2">
+                                            <div
+                                                style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
+                                                &nbsp;</div>
                                         </td>
-                                        <td style="width: 30px; text-align: center;">
-                                            <img src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/ship.png" alt="" width="30" height="30" style="display: block;">
+                                        <td width="30" height="30"><img style="display: block; margin: auto 0;"
+                                                src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/ship.png"
+                                                alt="" width="30" height="30"></td>
+                                        <td  width="44" height="2">
+                                            <div
+                                                style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
+                                                &nbsp;</div>
                                         </td>
-                                        <td style="width: 44px; text-align: center;">
-                                            <div style="width: 44px; height: 2px; background: #ff8317; display: block;">&nbsp;</div>
+                                        <td width="35" height="35">
+                                            <div
+                                                style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #ff8317; text-align: center;">
+                                                &nbsp;</div>
                                         </td>
-                                        <td style="width: 35px; text-align: center;">
-                                            <div style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #ff8317; display: block;">&nbsp;</div>
+
+
+
+                                        <td width="44" height="2">
+                                            <div
+                                                style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
+                                                &nbsp;</div>
                                         </td>
-                                        <td style="width: 44px; text-align: center;">
-                                            <div style="width: 44px; height: 2px; background: #ff8317; display: block;">&nbsp;</div>
+                                        <td width="30" height="30"> <img style="display: block; margin: auto 0;"
+                                                src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/train.png"
+                                                alt="" width="30" height="30"></td>
+                                        <td  width="44" height="2">
+                                            <div
+                                                style="width: 44px; height: 2px; background: #ff8317; margin: auto 0; display: block;">
+                                                &nbsp;</div>
                                         </td>
-                                        <td style="width: 30px; text-align: center;">
-                                            <img src="https://crm-core.soft-pro.com/img/for-emails/inter-freight_route-elements/train.png" alt="" width="30" height="30" style="display: block;">
-                                        </td>
-                                        <td style="width: 44px; text-align: center;">
-                                            <div style="width: 44px; height: 2px; background: #ff8317; display: block;">&nbsp;</div>
-                                        </td>
-                                        <td style="width: 10px; text-align: center;">
-                                            <div style="width: 10px; height: 10px; border: 2px solid #ff8317; border-radius: 50%; display: block;">&nbsp;</div>
+
+
+
+
+                                        <td width="10" height="10">
+                                            <div
+                                                style="width: 10px; height: 10px; border: 2px solid #ff8317; border-radius: 50%; margin: 13px 0;">
+                                                &nbsp;</div>
                                         </td>
                                     </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="display: flex;">
-                                <p style="width: 100px; text-align: left; font-size: 10px; color: #092f61; margin: 0 auto 0;">China</p>
-                                <p style="width: 100px; text-align: center; font-size: 10px; color: #092f61; margin: 0 auto 0;">Владивосток</p>
-                                <p style="width: 100px; text-align: right; font-size: 10px; color: #092f61; margin: 0 auto 0;">{{$transTime_city}}</p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td style="margin: auto 0;">
-                    <p style="font-size: 13px;">Средний транзитный срок {if $daysFull_AVG_percentage}({{$daysFull_AVG_percentage}}% ктк по нашей компании){/if}: {{$daysFull_AVG}} дн.</p>
-                </td>
-            </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style=" display: flex;">
+                            <p
+                                style="width: 100px; text-align: left; font-size: 10px; color: #092f61; margin: 0 auto 0                        0;">
+                                China</p>
+                            <p
+                                style="width: 100px; text-align: center; font-size: 10px; color: #092f61; margin: 0 auto 0                        auto;">
+                                Владивосток</p>
+                            <p
+                                style="width: 100px; text-align: right; font-size: 10px; color: #092f61; margin: 0 0 0                        auto;">
+                                {{$transTime_city}}</p>
+                        </div>
+                    </td>
+                    <td width="540">
+                        <div style="margin: auto 0 auto 20px;">
+                            <p style="font-size: 13px;">Средний транзитный срок {if
+                                $daysFull_AVG_percentage}({{$daysFull_AVG_percentage}}% ктк по нашей компании){/if}:
+                                {{$daysFull_AVG}} дн.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
         </table>
-        
-        
         <br><br>
         <div style="display: flex;">
             <div style="width: 300px; margin-right: 20px;">
@@ -159,7 +132,7 @@
                             &nbsp;</div>
                     </div>
                 </div>
-                <div style="width: 100%; display: flex;">
+                <div style=" display: flex;">
                     <p
                         style="width: 100px; text-align: left; font-size: 10px; color: #092f61; margin: 0 auto 0                        0;">
                         China</p>
@@ -210,7 +183,7 @@
                             &nbsp;</div>
                     </div>
                 </div>
-                <div style="width: 100%; display: flex;">
+                <div style=" display: flex;">
                     <p
                         style="width: 100px; text-align: left; font-size: 10px; color: #092f61; margin: 0 auto 0                        0;">
                         China</p>
@@ -273,7 +246,7 @@
                             &nbsp;</div>
                     </div>
                 </div>
-                <div style="width: 100%; display: flex;">
+                <div style=" display: flex;">
                     <p
                         style="width: 100px; text-align: left; font-size: 10px; color: #092f61; margin: 0 auto 0                                0;">
                         China</p>
@@ -304,7 +277,7 @@
     </div>
 </main>
 <footer style="margin-top: 30px; padding: 40px 0;">
-    <div style="max-width: 840px; width: 100%; margin: 0 auto; padding: 0 5px; box-sizing: content-box;">ф
+    <div style="width: 840px;  margin: 0 auto; padding: 0 5px; box-sizing: content-box;">
         <p
             style="text-align: left; display: block; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin: 3px 0; color: #092f61; font-size: 14px;">
             Best regards,</p>
